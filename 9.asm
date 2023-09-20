@@ -1,0 +1,7 @@
+			MOV		R1, #10 ;COUNTER
+			MOV		R0, #0
+START_OF_LOOP	ADD		R0, R0 , #1
+			SUBS		R1, R1, #1
+			BEQ		END_OF_LOOP ; if (R1 == 0) break
+			B		START_OF_LOOP
+END_OF_LOOP	END

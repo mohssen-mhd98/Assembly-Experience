@@ -1,0 +1,11 @@
+START	B		FUNC
+MAIN		END
+FUNC		MOV		R0, #'3'
+		MOV		R1, #'0'
+		MOV		R2, #'9'
+		CMP		R0, R1
+		BCC		ENDP
+		CMP		R2, R0
+		BCC		ENDF
+		MOV		R0, #0
+ENDF		B		MAIN
